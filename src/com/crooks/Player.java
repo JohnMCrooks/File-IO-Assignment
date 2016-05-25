@@ -13,6 +13,14 @@ public class Player {
     public Player() {
     }
 
+    public Player(String name, String corp, String wallaetBallance, String shipname, String stagingSystem) {
+        this.name = name;
+        this.corp = corp;
+        this.wallaetBallance = wallaetBallance;
+        this.shipname = shipname;
+        this.stagingSystem = stagingSystem;
+    }
+
     public String getName() {
         return name;
     }

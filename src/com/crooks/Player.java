@@ -6,7 +6,7 @@ package com.crooks;
 public class Player {
     String name;
     String corp;
-    int wallaetBallance;
+    String wallaetBallance;
     String shipname;
     String stagingSystem;
 
@@ -21,7 +21,7 @@ public class Player {
         return corp;
     }
 
-    public int getWallaetBallance() {
+    public String getWallaetBallance() {
         return wallaetBallance;
     }
 
@@ -31,5 +31,16 @@ public class Player {
 
     public String getStagingSystem() {
         return stagingSystem;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "name='" + name + '\'' +
+                ", corp='" + corp + '\'' +
+                ", wallaetBallance=" + wallaetBallance +
+                ", shipname='" + shipname + '\'' +
+                ", stagingSystem='" + stagingSystem + '\'' +
+                '}';
     }
 }
